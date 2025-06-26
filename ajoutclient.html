@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ajouter</title>
+    <script src="test.js"></script>
+  </head>
+  <body>
+    <form
+      name="f"
+      action="ajoutclient.php"
+      method="post"
+      onsubmit="return verif1()"
+    >
+      <fieldset>
+        <legend>Ajout d'un client :</legend>
+        <table>
+          <tr>
+            <td><label for="ncin">NCIN :</label></td>
+            <td><input type="text" name="ncin" id="ncin" /></td>
+          </tr>
+          <tr>
+            <td><label for="nom">Nom :</label></td>
+            <td><input type="text" name="nom" id="nom" /></td>
+          </tr>
+          <tr>
+            <td><label for="pre">Prénom :</label></td>
+            <td><input type="text" name="pre" id="pre" /></td>
+          </tr>
+          <tr>
+            <td><label for="tel">Tel :</label></td>
+            <td><input type="text" name="tel" id="tel" /></td>
+          </tr>
+          <tr>
+            <td><input type="reset" value="Annuler" /></td>
+            <td><input type="submit" value="Ajouter" /></td>
+          </tr>
+        </table>
+      </fieldset>
+    </form>
+  </body>
+</html>
